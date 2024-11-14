@@ -6,5 +6,5 @@ User = get_user_model()
 
 urlpatterns = [
     path('', TaskListCreateView.as_view(), name='task_list_create'),
-    path('<int:pk/>', TaskDetailView.as_view(), name='task_detail'),
+    path('<int:pk>/', TaskDetailView.as_view(), name='task_detail'),
 ]
