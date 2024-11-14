@@ -3,7 +3,7 @@ from rest_framework import generics, status
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
 
-from .serializers import UserResgisterSerializer, UserLoginSerializer, UserProfileSerializer, UserUpdateSerializer
+from .serializers import UserRegisterSerializer, UserLoginSerializer, UserProfileSerializer, UserUpdateSerializer
 from django.contrib.auth import authenticate
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
